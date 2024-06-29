@@ -1,2 +1,4 @@
-package de.aredblock.osiris.command;public interface CommandRegistry {
+package de.aredblock.osiris.command;
+
+public interface CommandRegistry {
 }

@@ -2,13 +2,14 @@ package de.aredblock.osiris.feature.listener;
 
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.block.BlockBreakEvent;
+import org.bukkit.event.entity.FoodLevelChangeEvent;
 
-final class BlockBreakListener implements Listener {
+final class HungerListener implements Listener {
 
     @EventHandler
-    public void onBlockBreakEvent(BlockBreakEvent event){
+    public void onFoodLevelChangeEvent(FoodLevelChangeEvent event) {
         event.setCancelled(true);
+        event.setFoodLevel(20);
     }
 
 }
